@@ -8,6 +8,11 @@ func _physics_process(delta):
 			start_swim()
 		swim_speed()
 
+	if position.y >= 500:
+		gravity_scale = 0
+		linear_velocity.y = 0
+		$AnimationPlayer.stop()
+
 func start_swim():
 	started = true
 	gravity_scale = 5.0
