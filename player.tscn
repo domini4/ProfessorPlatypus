@@ -43,6 +43,8 @@ tracks/0/keys = {
 gravity_scale = 0.0
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -12.021 )
+scale = Vector2( 0.387174, 0.387174 )
 texture = ExtResource( 1 )
 hframes = 3
 frame = 2
@@ -55,3 +57,5 @@ shape = SubResource( 1 )
 autoplay = "idle"
 anims/idle = SubResource( 2 )
 anims/swim = SubResource( 3 )
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
